@@ -21,7 +21,7 @@ export default function ThankYou() {
         <p style={{ color: "#888", marginBottom: "2rem", fontSize: ".9rem", lineHeight: 1.7 }}>شكراً لاهتمامك بمشروع Palm Hills رأس الحكمة. فريقنا هيتواصل معاك خلال 24 ساعة بالبروشور والأسعار التفصيلية.</p>
         <div style={{ background: "#fff", border: "1px solid rgba(0,0,0,.06)", borderRadius: 12, padding: "20px", marginBottom: "20px" }}>
           <a href="tel:+201001050018" dir="ltr" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "12px 0", borderBottom: "1px solid rgba(0,0,0,.05)", textDecoration: "none", color: "#1a1a1a" }}>
-            <span style={{ fontWeight: 700, fontSize: ".95rem" }}>0100 900 5579</span>
+            <span style={{ fontWeight: 700, fontSize: ".95rem" }}>01001050018</span>
             <span style={{ fontSize: ".72rem", color: "#8B1A1A", fontWeight: 600 }}>📞 اتصال مباشر</span>
           </a>
           <a href="https://wa.me/201001050018" target="_blank" rel="noopener noreferrer" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "12px 0", textDecoration: "none" }}>
