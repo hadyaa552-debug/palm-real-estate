@@ -143,7 +143,7 @@ export default function Page() {
           {[["المشروع", "project"], ["الماستر بلان", "masterplan"], ["الأسعار", "prices"], ["المطور", "developer"], ["تواصل", "contact"]].map(([l, id]) => (
             <button key={id} onClick={() => scroll(id)} style={{ background: "none", border: "none", cursor: "pointer", fontSize: ".74rem", fontWeight: 600, color: scrolled ? "#8B7355" : "rgba(255,255,255,.55)", fontFamily: "'Almarai',sans-serif", letterSpacing: ".04em", transition: "color .2s" }}>{l}</button>
           ))}
-          <a href={`tel:${PHONE}`} onClick={() => (window as any).trackCall(`tel:${PHONE}`)} dir="ltr" style={{ fontSize: ".82rem", fontWeight: 700, textDecoration: "none", color: scrolled ? "#8B1A1A" : "#fff" }}>0100 900 5579</a>
+          <a href={`tel:${PHONE}`} onClick={() => (window as any).trackCall(`tel:${PHONE}`)} dir="ltr" style={{ fontSize: ".82rem", fontWeight: 700, textDecoration: "none", color: scrolled ? "#8B1A1A" : "#fff" }}>01001050018</a>
           <button onClick={() => scroll("contact")} style={{ background: "#8B1A1A", color: "#fff", border: "none", padding: "9px 18px", fontWeight: 700, fontSize: ".72rem", cursor: "pointer", fontFamily: "'Almarai',sans-serif", borderRadius: 6 }}>سجّل الآن</button>
         </div>
       </nav>
