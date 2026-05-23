@@ -1,0 +1,5 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+html { scroll-behavior: smooth; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Cairo', sans-serif; }
