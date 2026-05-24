@@ -410,7 +410,7 @@ export default function Page() {
             <p style={{ fontSize: ".65rem", fontWeight: 700, letterSpacing: ".25em", color: "rgba(255,255,255,.45)", marginBottom: 10 }}>تواصل معنا</p>
             <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "2.2rem", fontWeight: 500, color: "#fff", lineHeight: 1.1, marginBottom: 14 }}>وحدتك تنتظرك<br /><span style={{ fontStyle: "italic", opacity: .3 }}>في رأس الحكمة</span></h2>
             <p style={{ fontSize: ".85rem", color: "rgba(255,255,255,.5)", lineHeight: 1.85, marginBottom: 28 }}>سجّل بياناتك واحصل على البروشور والأسعار التفصيلية وخطط السداد. فريقنا هيتواصل معاك خلال 24 ساعة.</p>
-            <a href={`tel:${PHONE}`} onClick={() => (window as any).trackCall(`tel:${PHONE}`)} dir="ltr" style={{ fontFamily: "'Playfair Display',serif", fontSize: "2rem", fontWeight: 600, color: "#fff", textDecoration: "none", marginBottom: 20 }}>0100 900 5579</a>
+            <a href={`tel:${PHONE}`} onClick={() => (window as any).trackCall(`tel:${PHONE}`)} dir="ltr" style={{ fontFamily: "'Playfair Display',serif", fontSize: "2rem", fontWeight: 600, color: "#fff", textDecoration: "none", marginBottom: 20 }}>01001050018</a>
             <div style={{ display: "flex", gap: 10 }}>
               <a href={`${WA}?text=${encodeURIComponent("مرحباً، أنا مهتم بمشروع Palm Hills رأس الحكمة 1400 فدان")}`} onClick={() => (window as any).trackWhatsapp()} target="_blank" rel="noopener noreferrer"
                 style={{ padding: "12px 24px", background: "#25D366", color: "#fff", fontWeight: 700, fontSize: ".78rem", textDecoration: "none", borderRadius: 8 }}>💬 واتساب</a>
