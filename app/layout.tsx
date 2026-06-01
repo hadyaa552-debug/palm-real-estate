@@ -1,53 +1,41 @@
-import type { Metadata } from "next"
-import Script from "next/script"
-import "./globals.css"
+import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Palm Hills — رأس الحكمة | 1,400 فدان",
-  description: "Palm Hills رأس الحكمة — أول مطور مصري في رأس الحكمة. 1,400 فدان، 4.8 كم شاطئ، تصميم OBMI. فلل وشاليهات وبيتش هومز.",
-}
+  title: "هاسيندا رأس الحكمة بالم هيلز | أسعار وتقسيط 10 سنوات",
+  description:
+    "هاسيندا رأس الحكمة من بالم هيلز عند الكيلو 238 على الساحل الشمالي - 1,400 فدان و4.8 كم بيتش فرونت. تبدأ من 11.7 مليون جنيه، 5% مقدم وتقسيط حتى 10 سنوات.",
+  keywords:
+    "هاسيندا رأس الحكمة,Hacienda Ras El Hekma,هاسيندا بالم هيلز,Palm Hills Hacienda,بالم هيلز رأس الحكمة,الساحل الشمالي 2026,أسعار هاسيندا رأس الحكمة,شاليهات هاسيندا,فيلات بيتش فرونت",
+  openGraph: {
+    title: "هاسيندا رأس الحكمة بالم هيلز - الكيلو 238 الساحل الشمالي",
+    description:
+      "مشروع ساحلي فاخر من بالم هيلز على 1,400 فدان مع 4.8 كم بيتش فرونت. بيتش هومز، شاليهات، توين هاوس وفيلات تبدأ من 11.7 مليون جنيه - تقسيط حتى 10 سنوات.",
+    locale: "ar_EG",
+    type: "website",
+  },
+};
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="ar" dir="rtl" suppressHydrationWarning>
+    <html lang="ar" dir="rtl">
       <head>
-        {/* Google Ads Base Tag */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-18172939254"
-          strategy="afterInteractive"
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
         />
-        <Script id="gtag-init" strategy="afterInteractive">{`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'AW-18172939254');
-
-          // WhatsApp conversion
-          function trackWhatsapp(url) {
-            var callback = function() {
-              if (typeof(url) != 'undefined') { window.location = url; }
-            };
-            gtag('event', 'conversion', {
-              'send_to': 'AW-18172939254/6dOsCO_ysbIcEPaXxNlD',
-              'event_callback': callback
-            });
-            return false;
-          }
-
-          // Call conversion
-          function trackCall(url) {
-            var callback = function() {
-              if (typeof(url) != 'undefined') { window.location = url; }
-            };
-            gtag('event', 'conversion', {
-              'send_to': 'AW-18172939254/2YNBCOzysbIcEPaXxNlD',
-              'event_callback': callback
-            });
-            return false;
-          }
-        `}</Script>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body>{children}</body>
     </html>
-  )
+  );
 }
